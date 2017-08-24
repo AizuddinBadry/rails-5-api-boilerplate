@@ -1,3 +1,10 @@
 class ApplicationController < ActionController::Base
-  protect_from_forgery with: :exception
+  include Knock::Authenticable
+
+  private
+
+  def authenticate_v1_user
+  	authenticate_for API::V1::User
+  end
+
 end

@@ -12,6 +12,6 @@ and run:
 `rails s`
 
 ## Configuration
-1. Move all `rails g scaffold`, `rails g resource`, or `rails g controller` to app/controllers/api/v1/ folder
+1. Move all controller generate via `rails g scaffold`, `rails g resource`, or `rails g controller` to app/controllers/api/v1/ folder
 
 2. Edit routes.rb file to suit your apps environment
